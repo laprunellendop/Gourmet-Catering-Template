@@ -4,7 +4,7 @@
 } 
 .card{
     padding: 8px 16px ; 
-     background-color: white; /*Espace entre exterieur et bordure lien*/
+    background-color: white; /*Espace entre exterieur et bordure lien*/
     display: block !important;;
 } 
 
@@ -21,7 +21,7 @@
     background: #c1c1c1;
 }
 div.top{
-    position: sticky;
+    position: fixed;
     top: 0;   /*Fixer la barre de navigation en haut*/
     left:0;
     z-index: 1;
@@ -50,10 +50,7 @@ div.top{
 /*Content et Image principale*/
 .auto{
     margin-left:auto;margin-right:auto; /*Espace des deux cotés de l'affichage si width's head sup 1600px et width sup a 100%*/
-}
-
-
-    
+}   
 hr{
     border:0;border-top:1px solid #eee; margin: 20px 0;
 }
@@ -70,6 +67,9 @@ hr{
     float: left;
     padding: 24px;
 
+}
+#img-container img{
+    border-radius: 5px;   
 }
 #text-container{
     width: 49%;
@@ -102,11 +102,14 @@ hr{
     width: 49%;
     float: left;
     padding: 24px;
+    
 }
-#text-container2 p{
-    color: grey;
+#text-container2 h1{
+    text-align: center;
+    letter-spacing: 5px;
 }
-#text-container2 h4 h1{
+
+#text-container2 h1{
     letter-spacing: 5px;
 }
 
@@ -114,6 +117,10 @@ hr{
     width: 49%;
     float: left;
     padding-left: 30px;
+    
+}
+#img-container2 img{
+    border-radius: 5px;   
 }
 .grey{
     color: grey;
@@ -134,7 +141,7 @@ span{
     letter-spacing: 5px;
 }
 /*Contact*/
-.pad{padding: 40px 16px;}
+.contact-section{padding: 40px 16px;}
 input[type=text],[type=datetime-local]
 {
     width: 100%;
@@ -171,7 +178,7 @@ footer > p {
 a.color:hover{
     color: green;
 }
-.color:link{
+footer a:link{
     color: black;
 }
 /*Affichage*/
@@ -181,8 +188,8 @@ body{
 *{ 
     box-sizing: border-box;
 }
-body{font-family: "Times New Roman", Georgia, Serif; padding:0;}
-@media screen and (max-width:600px){
+body{font-family: "Times New Roman", Georgia, Serif;}
+@media screen and (max-width:612px){
     #img-container{
     display:none;
 }

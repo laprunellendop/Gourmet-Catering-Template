@@ -21,14 +21,14 @@
       </div>
    </div> 
     <!--Image principal-->
-    <header class="contimg margin-bottom auto" id="Gourmet" style="max-width:1600px;min-width:500px;">
+    <header class="contimg auto" id="Gourmet" style="max-width:1600px;min-width:500px;">
         <img src="images/hamburger.jpg" alt="Hamburger" width="1600" height="800" class="image">
         <div class="textimg ">Le Catering</div>
     </header>
     <!--Contenu-->
     <div class="auto" style="max-width: 1100px;">
-            <div class="padtopbottom about-section" id="About"><!--bloc1-->
-                <div id="img-container" class="opacity"><img src="images/tablesetting2.jpg"  style=" border-radius: 5px; width:100%;">
+            <div class="about-section" id="About"><!--bloc1-->
+                <div id="img-container" class="opacity"><img src="images/tablesetting2.jpg"  style=" width:100%;">
                 </div>
                 <div id="text-container">
                     <h1 >About Catering</h1><br>
@@ -38,9 +38,9 @@
                 </div>
             </div>
         <hr>
-            <div class="padtopbottom menu-section" id="Menu"> <!--bloc2-->
+            <div class="menu-section" id="Menu"> <!--bloc2-->
                 <div id="text-container2">
-                    <h1 class="text-align" >Our Menu</h1>
+                    <h1>Our Menu</h1>
                     <h4 >Bread Basket</h4>
                     <p>Assortment of fresh baked fruit breads and muffins 5.50</p><br>
                     <h4>Honey Almond Granola with Fruits</h4>
@@ -53,20 +53,20 @@
                     <p>With syrup, butter and lots of berries 8.50</p><br>
                 </div>
                 <div id="img-container2" class="opacity"><img src="images/tablesetting.jpg" alt="Hello World from Space"
-                    style=" border-radius: 5px; width:100%">
+                    style="width:100%">
                 </div>
             </div>
         <hr>
-            <div class="margauto pad" id="Contact"><!--Contact-->
+            <div class="contact-section" id="Contact"><!--Contact-->
                 <h1>Contact</h1><br>
                 <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.Do not hesitate to contact us.</p>
                 <p class="blue-grey"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>   
                 <p> You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
-                <form action="">
-                <p>  <input type="text" name="" id="" placeholder="Name"></p>
-                <p><input type="text" name="" id="" placeholder="How many people"></p>
-                <p><input type="datetime-local" value="2020-11-16T20:00"></p> 
-                <p><input type="text" name="" id="" placeholder="Message/Special requirements"></p> 
+                <form action="/action_page.php" target="_blank">
+                <p><input type="text" placeholder="Name" required name="Name"></p>
+                <p><input type="text" placeholder="How many people" required name="People"></p>
+                <p><input type="datetime-local" value="2020-11-16T20:00" required name="Date"></p> 
+                <p><input type="text" placeholder="Message/Special requirements" required name="Message"></p> 
                 <p><button class="button" type="submit">SEND MESSAGE</button></p>
                 </form>
             </div>
