@@ -3,74 +3,84 @@
 <head>
     <title>Template0</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="template1.css" >
+    <link rel="stylesheet" href="template0.css" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        
+        body {font-family: "Times New Roman", Georgia, Serif;}
+        h1, h2, h3, h4, h5, h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+        }
     </style>
 </head>
 <body>
     <!--barre de navigation-->
     
-    <div class="card top box-shadow letspac">
-        <a href="#Gourmet">Gourmet au Catering</a>
-      <div class="navright">
-        <a href="#About">About</a>
-        <a href="#Menu">Menu</a>
-        <a href="#Contact">Contact</a>
-      </div>
-   </div> 
+    <div class="top">
+        <div class="card white wide padding">
+            <a href="#Gourmet" class="button">Gourmet au Catering</a>
+            <div class="right">
+                <a href="#About" class="button">About</a>
+                <a href="#Menu" class="button">Menu</a>
+                <a href="#Contact" class="button">Contact</a>
+            </div>
+        </div>
+    </div> 
     <!--Image principal-->
-    <header class="contimg auto" id="Gourmet" style="max-width:1600px;min-width:500px;">
+    <header class="display-container content wide" id="Gourmet" style="max-width:1600px;min-width:500px;">
         <img src="images/hamburger.jpg" alt="Hamburger" width="1600" height="800" class="image">
-        <div class="textimg ">Le Catering</div>
+        <div class="display-bottomleft padding-large opacity"><h1 class="xxlarge">Le Catering</h1></div>
     </header>
     <!--Contenu-->
-    <div class="auto" style="max-width: 1100px;">
-            <div class="about-section" id="About"><!--bloc1-->
-                <div id="img-container" class="opacity"><img src="images/tablesetting2.jpg"  style=" width:100%;">
+    <div class="content" style="max-width: 1100px;">
+            <div class="row padding-64" id="About"><!--bloc1-->
+                <div class="half left padding-large" >
+                    <img src="images/tablesetting2.jpg" width="600" height="750" class="opacity-min image border-radius">
                 </div>
-                <div id="text-container">
-                    <h1 >About Catering</h1><br>
-                    <p class="text-align letspac">Tradition since 1889</p>
-                    <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span>seasonal</span> ingredients.</p>
-                    <p class="grey">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-            </div>
-        <hr>
-            <div class="menu-section" id="Menu"> <!--bloc2-->
-                <div id="text-container2">
-                    <h1>Our Menu</h1>
-                    <h4 >Bread Basket</h4>
-                    <p>Assortment of fresh baked fruit breads and muffins 5.50</p><br>
-                    <h4>Honey Almond Granola with Fruits</h4>
-                    <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-                    <h4>Belgian Waffle</h4>
-                    <p>Vanilla flavored batter with malted flour 7.50</p><br>
-                    <h4>Scrambled eggs</h4>
-                    <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-                    <h4>Blueberry Pancakes</h4>
-                    <p>With syrup, butter and lots of berries 8.50</p><br>
-                </div>
-                <div id="img-container2" class="opacity"><img src="images/tablesetting.jpg" alt="Hello World from Space"
-                    style="width:100%">
+                <div class="half left padding-large">
+                    <h1 class="wide center">About Catering</h1><br>
+                    <p class=" wide center large">Tradition since 1889</p>
+                    <div class="large justify">
+                        <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="tag light-grey">seasonal</span> ingredients.</p>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
                 </div>
             </div>
         <hr>
-            <div class="contact-section" id="Contact"><!--Contact-->
-                <h1>Contact</h1><br>
+            <div class="row padding-64" id="Menu"> <!--bloc2-->
+                <div class="half left padding-large">
+                    <h1 class="center wide">Our Menu</h1>
+                    <br>
+                    <h4 class="wide large">Bread Basket</h4>
+                    <p class="opacity">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+                    <h4 class="wide large">Honey Almond Granola with Fruits</h4>
+                    <p class="opacity">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+                    <h4 class="wide large">Belgian Waffle</h4>
+                    <p class="opacity">Vanilla flavored batter with malted flour 7.50</p><br>
+                    <h4 class="wide large">Scrambled eggs</h4>
+                    <p class="opacity">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+                    <h4 class="wide large">Blueberry Pancakes</h4>
+                    <p class="opacity">With syrup, butter and lots of berries 8.50</p><br>
+                </div>
+                <div class="half left padding-large"><img src="images/tablesetting.jpg" alt="Hello World from Space"
+                    width="600" height="750" class="image opacity">
+                </div>
+            </div>
+        <hr>
+            <div class="container padding-64 " id="Contact"><!--Contact-->
+                <h1 class="wide">Contact</h1><br>
                 <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.Do not hesitate to contact us.</p>
-                <p class="blue-grey"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>   
+                <p class="text-blue-grey large"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>   
                 <p> You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
                 <form action="/action_page.php" target="_blank">
-                <p><input type="text" placeholder="Name" required name="Name"></p>
-                <p><input type="text" placeholder="How many people" required name="People"></p>
-                <p><input type="datetime-local" value="2020-11-16T20:00" required name="Date"></p> 
-                <p><input type="text" placeholder="Message/Special requirements" required name="Message"></p> 
-                <p><button class="button" type="submit">SEND MESSAGE</button></p>
+                <p><input type="text" placeholder="Name" required name="Name" class="input padding-16"></p>
+                <p><input type="text" placeholder="How many people" required name="People" class="input padding-16"></p>
+                <p><input type="datetime-local" value="2020-11-16T20:00" required name="Date" class="input padding-16"></p> 
+                <p><input type="text" placeholder="Message/Special requirements" required name="Message" class="input padding-16"></p> 
+                <p><button class="button light-grey section" type="submit">SEND MESSAGE</button></p>
                 </form>
             </div>
     </div>
-    <footer><p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="w3schools" target="_blank" class="color">w3.css</a></p></footer>
+    <footer class="light-grey padding-32 center"><p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="w3schools" target="_blank" class="hover-text-green">w3.css</a></p></footer>
 </body>
 </html>
